@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Informativa</title>
+    <link rel="icon" href="../imagenes/phone.png" type="image/png" sizes="16x16">
+</head>
+
+<body>
+    <h1>Encuesta Informativa</h1>
+    <p>Esto es una encuesta informativa para conocer los gustos de las personas respecto los dispositivos móviles.</p>
+    <form action="http://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Encuesta sobre teléfonos móviles.</legend>
+            <div>
+                <label for="nombre">Nombre y Apellidos: </label>
+                <input id="nombre" type="text" name="nom" placeholder="Pon tu nombre y apellidos" required autofocus>
+            </div>
+            <br>
+            <div>
+                <label for="nombre">Email: </label>
+                <input id="email" type="email" name="email" placeholder="Pon tu email.Ej a@gmail.es" required>
+            </div>
+            <br>
+            <div>
+                <label for="fecha">Fecha de realización:</label>
+                <input type="date" name="fecha" min="2021-11-08" required>
+            </div>
+            <div>
+                <p>Cual es tu marca de telefonos preferida.</p>
+                <input type="radio" id="samsung" name="movil" value="samsung" required>
+                <label for="samsung">Samsung</label><br>
+                <input type="radio" id="iphone" name="movil" value="iphone">
+                <label for="iphone">Iphone</label><br>
+                <input type="radio" id="xiaomi" name="movil" value="xiaomi">
+                <label for="xiaomi">Xiaomi</label><br>
+                <input type="radio" id="huawei" name="movil" value="huawei">
+                <label for="huawei">Huawei</label><br>
+                <input type="radio" id="oneplus" name="movil" value="oneplus">
+                <label for="oneplus">Oneplus</label><br>
+                <input type="radio" id="motorola" name="movil" value="motorola">
+                <label for="motorola">Motorola</label><br>
+                <input type="radio" id="nokia" name="movil" value="nokia">
+                <label for="nokia">Nokia</label><br>
+                <input type="radio" id="otro" name="movil" value="otro">
+                <label for="otro">Otro</label><br>
+            </div>
+            <div>
+                <p>Que es en lo que te fijas al comprar un nuevo móvil: </p>
+                <input type="checkbox" id="componente1" name="componente1" value="Cámara">
+                <label for="componente1"> Cámara</label><br>
+                <input type="checkbox" id="componente2" name="componente2" value="Procesador">
+                <label for="componente2"> Procesador</label><br>
+                <input type="checkbox" id="componente3" name="componente3" value="Precio">
+                <label for="componente3"> Precio</label><br>
+                <input type="checkbox" id="componente4" name="componente4" value="gama">
+                <label for="componente4"> Gama</label><br>
+                <input type="checkbox" id="componente5" name="componente5" value="marca">
+                <label for="componente5"> Marca</label><br>
+                <input type="checkbox" id="componente6" name="componente6" value="bateria">
+                <label for="componente6"> Bateria</label><br>
+                <input type="checkbox" id="componente7" name="componente7" value="pantalla">
+                <label for="componente7"> Pantalla</label><br>
+                <input type="checkbox" id="componente8" name="componente8" value="memoriaram">
+                <label for="componente8"> Memoria RAM</label><br>
+                <input type="checkbox" id="componente9" name="componente9" value="almacenamiento">
+                <label for="componente9"> Almacenamiento</label><br>
+                <input type="checkbox" id="componente10" name="componente10" value="otro">
+                <label for="componente10"> Otro</label>
+            </div>
+            <br>
+            <div>
+                <label for="Extra">Información extra que deseas añadir</label><br>
+                <textarea id="Extra" name="Extra"></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reiniciar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+<footer>
+    <hr>
+    <p><em>Hecho por <strong>Alberto Miguel</strong> en <time> 08 de noviembre de 2021</em></time>
+    </p>
+</footer>
+
+</html>
